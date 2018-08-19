@@ -1,5 +1,7 @@
 FROM circleci/ruby:2.4-stretch-node
 
+USER root
+
 ENV RUBY_VERSION=2.4.0
 
 RUN sudo apt-get install -y rbenv ruby-build
