@@ -14,5 +14,5 @@ RUN rbenv global $RUBY_VERSION
 
 RUN sudo apt-get install -y default-jdk
 RUN echo "export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64" | sudo tee -a /etc/profile.d/java.sh
-RUN sudo gem update --system 2.7.4 # https://git.io/vAB1b
-RUN sudo gem install bundler --no-rdoc --no-ri
+RUN rbenv exec gem update --system 2.7.4 # https://git.io/vAB1b
+RUN rbenv exec gem install bundler --no-rdoc --no-ri
