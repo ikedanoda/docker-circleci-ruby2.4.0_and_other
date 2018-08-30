@@ -3,6 +3,7 @@ FROM circleci/ruby:2.4-stretch-node
 USER circleci
 
 ENV RUBY_VERSION=2.4.0
+ENV RUBYOPT -EUTF-8
 
 RUN sudo apt-get install -y rbenv ruby-build
 
